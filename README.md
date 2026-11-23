@@ -1,22 +1,15 @@
-\# Java Command-Line Game
+## Try a production chain
 
+After running `bash run.sh`, enter these commands at the simulator prompt, one per line:
 
-
-An object-oriented Java project with separate packages for command parsing, game logic, and the game model.
-
-
-
-\## Run the game
-
-
-
-With a JDK and Bash installed, run this from the repository root:
-
-
-
-```bash
-
-bash run.sh
-
+```text
+build WheatField
+build Mill
+tick
+info resources
+graph flour
 ```
 
+The wheat field produces wheat, and the mill converts it into flour. `info resources` shows the current stock, and `graph flour` shows how the flour stock has changed over time. Run `tick` a few more times, then run `graph flour` again to see the history grow.
+
+Use `help` to list all commands or `quit` to exit.
